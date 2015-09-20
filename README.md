@@ -9,7 +9,7 @@ I have previously written a MATLAB implementation, but it ran prohibitively slow
 
 ### To definitely do
 
-* [ ] Implement a symmetric matrix class based on NumPy
+* [x] Implement a symmetric matrix class based on NumPy
 * [ ] Floyd-Warshall algorithm to compute all-node shortest paths
 * [ ] Read in FreeSurfer meshes
 * [ ] Find voxel coverage of the triangular prisms that define greymatter volume
