@@ -1,5 +1,5 @@
 # surface_searchlight
-An implementation of surface-based decoding
+An implementation of surface-based fMRI decoding
 
 ***
 
@@ -10,8 +10,9 @@ I have previously written a MATLAB implementation, but it ran prohibitively slow
 ### To definitely do
 
 * [x] Implement a symmetric matrix class based on NumPy
-* [ ] Floyd-Warshall algorithm to compute all-node shortest paths
 * [ ] Read in FreeSurfer meshes
+* [ ] Floyd-Warshall algorithm to compute all-node shortest paths
+* [ ] Read in functional (timeseries) data and extract grid
 * [ ] Find voxel coverage of the triangular prisms that define greymatter volume
 * [ ] Find mapping between the greymatter cylinder centered at each node and voxels
 * [ ] Classification for voxels sets
@@ -20,4 +21,4 @@ I have previously written a MATLAB implementation, but it ran prohibitively slow
 
 * [ ] Parellelize classification
 * [ ] Space-efficient matrix class storing upper triangle only
-* [ ] Faster shortest path code using repeated calls to Dijkstra's algorithm with Fibonacci heap: O(V(E + V log V)) instead of O(V^3)
+* [ ] Faster shortest path code using repeated calls to Dijkstra's algorithm with Fibonacci heap: O(V * (E + V log V)) instead of O(V^3)
